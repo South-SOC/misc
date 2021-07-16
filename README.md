@@ -1,2 +1,4 @@
-# misc
-Miscellaneous code, scripts and commands
+# Miscellaneous
+Miscellaneous code, scripts and [commands](commands.txt)
+
+
