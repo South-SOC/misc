@@ -1,3 +1,9 @@
+# Git clone with a specific private key
+GIT_SSH_COMMAND='ssh -i ~/.ssh/ir_rsa -o IdentitiesOnly=yes' git clone git@github.com:South-SOC/misc.git
+
+# Git push with a specific private key
+GIT_SSH_COMMAND='ssh -i ~/.ssh/ir_rsa -o IdentitiesOnly=yes' git push origin main
+
 # Create a 100 MB file for testing download, upload commands
 dd if=/dev/zero of=output.dat  bs=10M  count=10
 
