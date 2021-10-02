@@ -4,6 +4,9 @@ GIT_SSH_COMMAND='ssh -i ~/.ssh/ir_rsa -o IdentitiesOnly=yes' git clone git@githu
 # Git push with a specific private key
 GIT_SSH_COMMAND='ssh -i ~/.ssh/ir_rsa -o IdentitiesOnly=yes' git push origin main
 
+#Rsync with particular SSH Key
+rsync -Pav -e "ssh -i $HOME/.ssh/id_rsa" username@hostname:/from/dir/ /to/dir/
+
 # Create a 100 MB file for testing download, upload commands
 dd if=/dev/zero of=output.dat  bs=10M  count=10
 
